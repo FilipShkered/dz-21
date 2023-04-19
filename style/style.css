@@ -1,0 +1,122 @@
+.body {
+    background-position: inherit;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+
+}
+
+.todo {
+    margin-left: 260px;
+    width: 350px;
+
+}
+
+.todoItem {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.todoItem::before {
+    content: '';
+    background: url(/img/dot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+
+}
+
+.input {
+    margin-top: 170px;
+    margin-left: 274px;
+    width: 260px;
+}
+
+.msgButton {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+    margin: 5px;
+    background-image: url(/img/submit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.done {
+
+    width: 300px;
+    cursor: pointer;
+    /* background-image: url(/img/check.png); */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    position: relative;
+
+}
+
+.done::before {
+    content: '';
+    background: url(/img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: -21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.deleteBtn {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+    margin: 5px;
+    background-image: url(/img/trash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border-radius: 40px;
+}
+
+.deleteBtn:hover {
+    background-color: gainsboro;
+    transition: 0.5s;
+    
+}
+
+.editBtn {
+    font-size: 0;
+    background-color: transparent;
+    border: 1px dashed black;
+    color: white;
+    padding: 12px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-image: url(/img/edit.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border-radius: 20px;
+}
+
+.editBtn:hover {
+    background-color: gainsboro;
+    transition: 0.5s;
+   
+}
