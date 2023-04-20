@@ -14,11 +14,10 @@ class Collection {
 
   create(todo) {
      return TodoApi
-    //   .create({
-    //     ...Collection.DEFAULT_TODO,
-    //     ...todo,
-    //   })
-         .create(todo)
+      .create({
+        ...Collection.DEFAULT_TODO,
+        ...todo,
+      })
       .then((newTodo) => {
         this.addListItem(newTodo)
 
