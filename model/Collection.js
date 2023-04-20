@@ -1,4 +1,7 @@
 class Collection {
+    static DEFAULT_TODO = {
+    done: false,
+  }
   #todoList = []
 
   fetch() {
@@ -10,8 +13,12 @@ class Collection {
   }
 
   create(todo) {
-    return TodoApi
-      .create(todo)
+     return TodoApi
+    //   .create({
+    //     ...Collection.DEFAULT_TODO,
+    //     ...todo,
+    //   })
+         .create(todo)
       .then((newTodo) => {
         this.addListItem(newTodo)
 

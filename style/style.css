@@ -7,7 +7,7 @@
 }
 
 .todo {
-    margin-left: 260px;
+    margin-left: 300px;
     width: 350px;
 
 }
@@ -58,7 +58,6 @@
 
     width: 300px;
     cursor: pointer;
-    /* background-image: url(/img/check.png); */
     background-position: left;
     background-repeat: no-repeat;
     background-size: 40px;
