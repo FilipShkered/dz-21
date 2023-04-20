@@ -1,6 +1,6 @@
 class TodoListView {
 
-    static CLASS_DONE = 'done'
+    static CLASS_DONE = '.done'
     static TODO_ITEM = '.todoItem'
     static DELETE_BTN = '.deleteBtn'
     static EDIT_BTN = '.editBtn'

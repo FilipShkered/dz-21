@@ -38,8 +38,8 @@ class Controller {
                 })
                 .catch(e => showError(e))
         } else {
-            TodoApi
-                .create(todo)
+            this.todoCollection.create(todo)
+              
                 .then((newTodo) => {
                     this.todoListView.writeTodo(newTodo)
                     this.todoFormView.clearData()
